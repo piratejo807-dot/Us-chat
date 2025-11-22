@@ -60,19 +60,20 @@ const ProfilePreview: React.FC = () => {
       <div className="max-w-md w-full mx-4">
         <div className="bg-white rounded-lg shadow-lg p-8 text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-8">
-            Welcome, {user.name}!
+            Welcome, {user.displayName || user.name}!
           </h1>
 
           <div className="flex flex-col items-center space-y-6">
             <Avatar
-              name={user.name}
+              name={user.displayName || user.name}
               size="large"
+              imageUrl={user.avatar}
               className="ring-4 ring-blue-100"
             />
 
             <div className="space-y-3">
               <h2 className="text-xl font-semibold text-gray-800">
-                {user.name}
+                {user.displayName || user.name}
               </h2>
 
               <p className="text-lg text-gray-600">
