@@ -40,3 +40,8 @@ export interface CreateMessageRequest {
   content: string;
   userId: string;
 }
+
+export interface UpdateProfileRequest {
+  displayName?: string;
+  avatar?: string;
+}
