@@ -53,7 +53,7 @@ const GroupChat: React.FC = () => {
   const getUserDetails = (userId: string) => {
     const foundUser = users.find(u => u.id === userId);
     return {
-      userName: foundUser?.name || 'Unknown User',
+      userName: foundUser?.displayName || foundUser?.name || 'Unknown User',
       userNumber: foundUser?.number || '????????'
     };
   };
