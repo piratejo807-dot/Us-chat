@@ -213,6 +213,10 @@ const GroupChat: React.FC = () => {
     router.push('/');
   };
 
+  const handleSettings = () => {
+    router.push('/settings');
+  };
+
   if (!user) {
     router.push('/');
     return null;
