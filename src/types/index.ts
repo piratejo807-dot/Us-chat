@@ -1,8 +1,9 @@
 export interface User {
   id: string;
   number: string;
-  name: string;
-  avatar?: string;
+  name: string;           // Original official name
+  displayName: string;    // Custom name chosen by user
+  avatar?: string;        // URL to uploaded photo
   createdAt: Date;
   lastSeen: Date;
 }
