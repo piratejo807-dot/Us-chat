@@ -31,7 +31,7 @@ const GroupChat: React.FC = () => {
   useEffect(() => {
     const loadUsers = async () => {
       try {
-        const response = await fetch('/public/users.json');
+        const response = await fetch('/users.json');
         if (response.ok) {
           const usersData = await response.json();
           const formattedUsers = usersData.map((u: any) => ({
