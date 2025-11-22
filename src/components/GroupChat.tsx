@@ -25,7 +25,7 @@ const GroupChat: React.FC = () => {
   const [isOffline, setIsOffline] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const pollingIntervalRef = useRef<NodeJS.Timeout | undefined>();
+  const pollingIntervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   // Load users data
   useEffect(() => {
