@@ -197,7 +197,7 @@ const GroupChat: React.FC = () => {
         userId: user.id,
         content: newMessage.trim(),
         createdAt: new Date(),
-        userName: user.name,
+        userName: user.displayName || user.name,
         userNumber: user.number
       };
 
